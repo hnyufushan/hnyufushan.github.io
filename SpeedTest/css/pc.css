@@ -1,0 +1,111 @@
+body {
+
+
+    /* https://pic.90sheji.com/design/04/53/52/88/5f963b217c034.jpg%21/fwfh/3840x0/clip/0x2550a0a0/quality/90/unsharp/true/compress/true/watermark/url/LzkwX3dhdGVyX3Y2LnBuZw==/repeat/true */
+    /* https://img.pptjia.com/image/20171219/233f2fa3ee1fd9018be9a71203d18d5e.jpg */
+    /* http://wap.dabaimao.com/images/home-bg.jpg */
+    /* https://dingyue.ws.126.net/cuuWZOuyDHlOr5AZgrk276zmkwCqWsV9yR3IziNcBLtsK1509801225977.gif */
+    background-image: url('https://pic.90sheji.com/design/04/53/52/88/5f963b217c034.jpg%21/fwfh/3840x0/clip/0x2550a0a0/quality/90/unsharp/true/compress/true/watermark/url/LzkwX3dhdGVyX3Y2LnBuZw==/repeat/true');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* 因使用了动态切换css，本条css弃用
+@media(max-width: 768px) {
+    body {
+        background-image: url('/imgs/android.png');
+
+
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    #someElement {
+        display: none;
+    }
+} */
+
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.list {
+    background-color: rgba(0, 0, 0, 0);
+    width: 33.33%;
+    float: left;
+    /* 可将此句改为position:absolute;left:0; */
+}
+
+
+div {
+    text-align: center;
+}
+
+
+button {
+    height: 75px;
+    width: 80%;
+    border-color: white;
+    /* border-width: 8px; */
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+hr {
+    height: 5px;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 55), rgb(0, 76, 255));
+}
+
+img {
+    width: 50px;
+    height: 50px;
+
+    /* vertical-align: middle; */
+}
+
+button img {
+    float: left;
+}
+
+h1 img {
+    width: 50%;
+    height: auto;
+}
+
+.zhu {
+    font-size: 20px;
+    /* font-family: 楷体; */
+    color: white;
+}
+
+.fu {
+    /* font-family: 楷体; */
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+}
+
+option {
+    background-color: rgb(14, 156, 239);
+}
