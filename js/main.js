@@ -7,12 +7,12 @@ function playMusic() {
   }
 }
     var ispaly=true;
-    $("#wenan").click(function(){
-        play();
+    $("#bfztyy").click(function(){
+        playMusic();
     });
 
-    var player = document.getElementById("audio");
-    play();
+    // var player = document.getElementById("audio");
+    // play();
     function play(){
         player.play();
         // swal("请问是否开启音乐一边浏览一边听呢？ \n 暂时无法自动播放下一首哦！！！ \n 只能手动刷新哦！！", {
