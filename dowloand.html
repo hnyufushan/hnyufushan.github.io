@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://www.94sq.cn/app -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>APP下载 - 小于音乐</title>
+    <meta name="keywords" content="小于音乐">
+    <meta name="description" content="小于音乐">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" href="./css/main.css">
+     <link rel="Shortcut Icon" href="https://www.xcooo.cn">
+    <style type="">
+        #bgImg {
+          height: 100%;
+          width: 100%;
+          background: url('./images/c4.gif') top center no-repeat;
+          background-size: cover;
+          position: absolute;
+          overflow: hidden;
+        }
+        .btn{
+            border:1px solid #243b55;
+        }
+        *{
+        margin:0;
+        padding:0;
+    }
+    a{
+        text-decoration: none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .weixin-tip{
+        display: none;
+        position: fixed;
+        left:0;
+        top:0;
+        bottom:0;
+        background: rgba(0,0,0,0.8);
+        filter:alpha(opacity=80);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+    .weixin-tip p{
+        text-align: center;
+        margin-top: 10%;
+        padding:0 5%;
+    }
+    </style>
+</head>
+<body class=""style="">
+<div id="bgImg">
+    <div class="" style="height:50%"></div>
+    <div class="appdownload-wrap" style="">
+        <div class="appdownload-btns" >
+            <a class="btn item-android" href="./apk/__UNI__EF70740_1028172722.apk" style="background-color:#dcdfdb;font-size:20px;text-align: center;color:#243b55">
+                <span class="txt" style="float: none"> <i class="iconfont"></i> 安卓探索版</span>
+            </a>
+            <a class="btn item-android" href="./apk/H535B7073_1026133012.apk" style="background-color:#dcdfdb;font-size:20px;text-align: center;color:#243b55">
+                <span class="txt" style="float: none"> <i class="iconfont"></i> 安卓青春版</span>
+            </a>
+            <a class="btn item-android" onclick="alert(&#39;程序猿正在努力开发中！&#39;);" style="background-color:#dcdfdb;font-size:20px;text-align: center;color:#243b55">
+                <span class="txt" style="float: none"> <i class="iconfont"></i> 苹果版</span>
+            </a>
+        </div>
+        <p style="text-align: center;color: #243b55;font-size:18px; width: 70%;margin: 0 auto">提示：开启你的音乐之旅吧</p>
+    </div>
+</div>
+<div class="weixin-tip">
+    <p>
+        <img src="./images/live_weixin.png" alt="请在浏览器中打开"/>
+    </p>
+</div>
+</body>
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(window).on("load",function(){
+        var winHeight = $(window).height();
+        function is_weixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var isWeixin = is_weixin();
+        if(isWeixin){
+            $(".weixin-tip").css("height",winHeight);
+            $(".weixin-tip").show();
+        }
+    })
+    </script>
+</html>
